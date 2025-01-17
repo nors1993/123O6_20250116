@@ -71,6 +71,6 @@ with open('config.properties', 'r', encoding='utf-8') as f:
 
 **Tips**:&#x20;
 
-1）查询时间最短只能设置为0.4，即timesBetweenTwoQuery=0.4，低于这个值，可能会封IP地址。
+1）查询时间最短需要大于0.3，即timesBetweenTwoQuery=0.3001以上，低于这个值，可能会封IP地址。
 
 2）如果在12306平台 更新了乘客信息 或 切换新账号, 请手动删除cache目录否则可能有未知问题。
