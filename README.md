@@ -1,4 +1,4 @@
-# 基于该仓库进行修改https://github.com/johnshazhu/12306
+# 基于以下仓库进行修改https://github.com/johnshazhu/12306
 # 12306
 # 坐席类别
     # 特等座 P 选座只有A、C、F
