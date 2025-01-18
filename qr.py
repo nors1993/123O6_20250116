@@ -11,6 +11,7 @@ from qr_login import qr_login
 from query_and_order import start
 from util import is_success
 
+from query_and_order import show_popup
 
 if __name__ == '__main__':
     ssl._create_default_https_context = ssl._create_unverified_context
@@ -20,3 +21,4 @@ if __name__ == '__main__':
         if is_success(rsp) and rsp['data']['is_login'] == 'Y':
             start()
     log('exit')
+show_popup()

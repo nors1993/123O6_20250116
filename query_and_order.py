@@ -13,6 +13,18 @@ from passenger import get_passengers, get_order_passengers
 from ticket.query_left_ticket import get_detail, can_buy_seat
 from util import get_today_str, is_candidate_config, is_success, wait_until_time
 
+import tkinter as tk
+from tkinter import messagebox
+
+def show_popup():
+    # 创建一个新的Tkinter窗口
+    root = tk.Tk()
+    root.withdraw()  # 隐藏主窗口
+    # 设置窗口为最上面
+    root.attributes('-topmost', True)
+    # 弹出消息框
+    messagebox.showinfo("提示", "抢到票！请在15分钟内尽快支付！")
+    root.destroy()
 
 def query_left_tickets():
     query_url = get_value('queryUrl')
